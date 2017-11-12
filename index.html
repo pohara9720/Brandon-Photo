@@ -97,6 +97,7 @@ label {
         margin-left: -55px;
         margin-top: 20px;
     }
+
     .slider{
         margin-left: -40px !important;
         width: 100vw !important;
@@ -175,7 +176,8 @@ and (max-device-width : 1024px)  {
                     </div>
                 </li>
                 <li>
-                    <img src="./saved/sbaby1.jpg">
+                   
+                    <img src="./saved/sb4.jpg">
                     <!-- random image -->
                    <!--  <div class="caption right-align">
                         <h3>I go places I've  </h3>
@@ -183,7 +185,7 @@ and (max-device-width : 1024px)  {
                     </div> -->
                 </li>
                 <li>
-                    <img src="./images/d1.jpg">
+                     <img id="lacie" src="./saved/sbaby1.jpg">
                     <!-- random image -->
                    <!--  <div class="caption right-align">
                         <h3>Right Aligned Caption</h3>
@@ -191,7 +193,7 @@ and (max-device-width : 1024px)  {
                     </div> -->
                 </li>
                 <li>
-                    <img src="./saved/scpl1.jpg">
+                    <img id="dude" src="./saved/scpl1.jpg">
                     <!-- random image -->
                     <!-- <div class="caption left-align">
                         <h3>Another Center Aligned Caption</h3>
@@ -215,31 +217,31 @@ and (max-device-width : 1024px)  {
 
         // Initialize Firebase
         // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyA-PG3lCfLDH9A9fULLOK63Fyw53rKZDLY",
-            authDomain: "cheynacarr-506e2.firebaseapp.com",
-            databaseURL: "https://cheynacarr-506e2.firebaseio.com",
-            projectId: "cheynacarr-506e2",
-            storageBucket: "cheynacarr-506e2.appspot.com",
-            messagingSenderId: "756010453903"
-        };
-        firebase.initializeApp(config);
-        var database = firebase.database();
+        // var config = {
+        //     apiKey: "AIzaSyA-PG3lCfLDH9A9fULLOK63Fyw53rKZDLY",
+        //     authDomain: "cheynacarr-506e2.firebaseapp.com",
+        //     databaseURL: "https://cheynacarr-506e2.firebaseio.com",
+        //     projectId: "cheynacarr-506e2",
+        //     storageBucket: "cheynacarr-506e2.appspot.com",
+        //     messagingSenderId: "756010453903"
+        // };
+        // firebase.initializeApp(config);
+        // var database = firebase.database();
 
 
 
 
-        $("#submit").on("click", function() {
-            event.preventDefault();
-            var name = $("#name").val().trim();
-            var number = $("#number").val().trim();
-            var message = $("#textarea1").val().trim();
-            database.ref().push({
-                Name: name,
-                Email: number,
-                Message: message
-            });
-        });
+        // $("#submit").on("click", function() {
+        //     event.preventDefault();
+        //     var name = $("#name").val().trim();
+        //     var number = $("#number").val().trim();
+        //     var message = $("#textarea1").val().trim();
+        //     database.ref().push({
+        //         Name: name,
+        //         Email: number,
+        //         Message: message
+        //     });
+        // });
 
 
 

@@ -16,6 +16,57 @@ body {
 .container {
     width: 100vw;
 }
+button{
+    height: 100px;
+    width: 200px;
+    background-color: transparent;
+    font-family: 'Playfair Display SC', serif;
+     color: #D2B48C !important;
+     border:solid #D2B48C 4px;
+
+
+}
+
+.polaroid-images a
+{
+    background: white !important;
+    display: inline;
+    float: right;
+    margin: 0 15px 30px;
+    padding: 10px 10px 45px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    transition: all .15s linear;
+    z-index:0;
+        position:relative;
+        margin-right: -150px;
+        margin-top: -350px;
+}
+
+.polaroid-images a:after {
+    color: #333;
+    font-size: 20px;
+    content: attr(title);
+    position: relative;
+    top:15px;
+}
+
+.polaroid-images img { 
+    display: block; 
+    width: inherit; 
+}
+.polaroid-images{
+    margin:150px 150px 150px 150px;
+}
+.p-img{
+    height: 350px;
+    width: 250px;
+}
 
 h1 {
     color: white;
@@ -70,15 +121,20 @@ h2 {
     font-size: 35px !important;
     font-weight: bolder;
 }
+.up{
+    margin-top: -110px;
+}
+.away{
+    margin-bottom: 50px;
+}
 
-
-.right {
+/*.right {
     float: right;
     height: 400px;
     width: 350px;
     border-radius: 50%;
     margin-bottom: 50px;
-}
+}*/
 
 
 .container {
@@ -112,7 +168,13 @@ label {
         margin-left: -55px;
         margin-top: 20px;
     }
-
+    .polaroid-images{
+        margin-top: 800px;
+        margin-right: 82px;
+    }
+    .up{
+        margin-top: -750px;
+    }
     #dropdown1 {
         margin-left: 220px !important;
         margin-top: -300px !important;
@@ -160,37 +222,8 @@ h1{
 <!-- Dropdown Structure -->
 
 <body>
-    <div id="modal1" class="modal modal-fixed-footer">
-        <div class="modal-content">
-            <h4>Contact me!</h4>
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col l6 m6 s12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="name" type="text" class="validate">
-                            <label for="icon_prefix">First Name</label>
-                        </div>
-                        <div class="input-field col l6 m6 s12">
-                            <i class="material-icons prefix">mail</i>
-                            <input id="number" type="email" class="validate">
-                            <label for="icon_telephone">Email</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <textarea id="textarea1" class="materialize-textarea"></textarea>
-                            <label for="textarea1">Message</label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <center><a id="submit" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Submit</a>
-                <center>
-        </div>
-    </div>
+    
+       
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="index.html">Home</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
@@ -214,19 +247,17 @@ h1{
             <h1>Brandon Cruz</h1>
             <div class="container">
                 <p>
-                    <h2>Hello!</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus tempora optio, dicta, harum cum deserunt?Quod nisi qui in quia iure non sapiente esse aut, labore impedit! A eius, nesciunt.
-                    <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsum reprehenderit excepturi repellendus minus at est corporis dolor nisi, molestiae magnam suscipit quos atque animi consectetur porro! Similique, tenetur, repellat?
-                    <br><img class="right" src="images/brandon.jpg">
-                    <h2>My Gear</h2>
-                    <ul>
-                        <li>-Camera</li>
-                        <li>-Lens</li>
-                        <li>-Strap</li>
-                        <li>-Another lens</li>
-                        <li>-Camera 2</li>
-                        <li>-Pictures</li>
+                    <h2>Zack Wyld Photography</h2> Hello my name is Brandon Cruz.<br>  I am a local photographer focusing on capturing <br> some of the  most memorable <br> moments in peoples lives. 
+                    <br> I want to present an artistic take on <br> photographing important occasions and providing <br> an unforgettable experience.
+                    <br><div class="polaroid-images"><a href="" title="Brandon Cruz"><img class="p-img" src="images/brandon.jpg"></a></div>
+                    <h2 class="up">I Specialize in</h2>
+                    <ul class="away">
+                        <li>-Portraits</li>
+                        <li>-Lifestyle</li>
+                        <li>-Weddings</li>
+                        
                     </ul>
-                    <h2>Another Heading</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam doloremque dolore tempora fuga temporeullam in atque repellendus illum consectetur culpa voluptatum nostrum quo, modi qui placeat esse aspernatur accusamus.</p>
+                    <a href="mailto:brandonc2014@gmail.com"><button>Book a Session</button></a>
             </div>
         </div>
     </div>
@@ -240,32 +271,32 @@ h1{
         $('.modal').modal();
 
         // Initialize Firebase
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyA-PG3lCfLDH9A9fULLOK63Fyw53rKZDLY",
-            authDomain: "cheynacarr-506e2.firebaseapp.com",
-            databaseURL: "https://cheynacarr-506e2.firebaseio.com",
-            projectId: "cheynacarr-506e2",
-            storageBucket: "cheynacarr-506e2.appspot.com",
-            messagingSenderId: "756010453903"
-        };
-        firebase.initializeApp(config);
-        var database = firebase.database();
+    //     // Initialize Firebase
+    //     var config = {
+    //         apiKey: "AIzaSyA-PG3lCfLDH9A9fULLOK63Fyw53rKZDLY",
+    //         authDomain: "cheynacarr-506e2.firebaseapp.com",
+    //         databaseURL: "https://cheynacarr-506e2.firebaseio.com",
+    //         projectId: "cheynacarr-506e2",
+    //         storageBucket: "cheynacarr-506e2.appspot.com",
+    //         messagingSenderId: "756010453903"
+    //     };
+    //     firebase.initializeApp(config);
+    //     var database = firebase.database();
 
 
 
 
-        $("#submit").on("click", function() {
-            event.preventDefault();
-            var name = $("#name").val().trim();
-            var number = $("#number").val().trim();
-            var message = $("#textarea1").val().trim();
-            database.ref().push({
-                Name: name,
-                Email: number,
-                Message: message
-            });
-        });
+    //     $("#submit").on("click", function() {
+    //         event.preventDefault();
+    //         var name = $("#name").val().trim();
+    //         var number = $("#number").val().trim();
+    //         var message = $("#textarea1").val().trim();
+    //         database.ref().push({
+    //             Name: name,
+    //             Email: number,
+    //             Message: message
+    //         });
+    //     });
 
 
 

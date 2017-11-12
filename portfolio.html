@@ -16,32 +16,64 @@ body {
 .container {
     width: 100vw;
 }
-.d{
+
+.d {
     height: 600px !important;
     width: 600px !important;
 }
-.bottom{
+
+.bottom {
     height: 700px !important;
     width: 500px !important;
 }
-.bot{
+
+.bot {
     width: 700px !important;
     height: 500px !important;
 }
+
 h1 {
     color: white;
 }
-.port{
+
+.port {
     width: 400px;
-    height:400px;
-    margin:20px;
+    height: 400px;
+    margin: 20px;
 }
-.three,.five{
-    height: 500px;  
+
+.three,
+.five {
+    height: 500px;
 }
-.cpl{
+
+.lthree {
+    height: 500px;
+    width: 600px;
+}
+
+.ltwon {
+    width: 550px;
+    /*margin-left: 80px;*/
+    margin-right: -50px;
+    float: right;
+}
+
+.ltwom {
+    width: 550px;
+    margin-left: -200px;
+    /*margin-right: 20px;*/
+    float: left;
+}
+
+.lone {
+    height: 600px;
+}
+
+.cpl {
     width: 600px !important;
 }
+
 nav {
     background-color: black !important;
 }
@@ -51,6 +83,7 @@ nav {
     height: 350px;
     margin-top: -45px;
     margin-left: -90px;
+    /*position: fixed;*/
 }
 
 #dropdown1 {
@@ -58,12 +91,14 @@ nav {
     margin-top: -55px!important;
     background-color: black;
     width: 19% !important;
+    /*position: fixed;*/
 }
 
 .dropdown-content li>a,
 .dropdown-content li>span {
     text-align: right !important;
     color: #D2B48C !important;
+    /*position: fixed;*/
 }
 
 .ig {
@@ -73,6 +108,10 @@ nav {
 
 #about {
     color: #D2B48C;
+}
+
+.small-container {
+    display: none;
 }
 
 a {
@@ -127,55 +166,79 @@ label {
 #submit {
     color: #D2B48C;
 }
-/*.port{
-    width: 200px;
-    height: 200px;
-}*/
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
 
-     #logo{
+#first {
+    height: 800px !important;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    #logo {
         margin-left: -50px;
         margin-top: 20px;
     }
-    
-    #dropdown1{
-    margin-left: 220px !important;
-    margin-top: -300px !important;
-    background-color: black;
-    width: 19% !important;
+
+    #dropdown1 {
+        margin-left: 220px !important;
+        margin-top: -300px !important;
+        background-color: black;
+        width: 19% !important;
     }
-    h1{
+    #bae1,#bae2,#jaz{
+        height: 500px !important;
+    }
+    #long1,#long2,#long6{
+        height: 500px !important;
+    }
+    #long5{
+        height: 400px;
+    }
+    .ltwon{
+        margin-right:-70px !important;
+        clear: both;
+    }
+
+    h1 {
         margin-left: -60px !important;
         font-size: 40px !important;
     }
-    .port{
+    .port {
         margin-left: 30px;
         height: 300px !important;
         width: 300px !important;
         margin-bottom: 15px;
     }
-    img{
-        
+    .small-container {
+        display: block;
+
+        width: 90% !important;
+        float: right;
+        margin-right: 80px !important;
+        font-size: 20px;
+        font-family: 'Comfortaa', cursive;
+        line-height: 25px;
+        margin-top: 50px !important;
     }
+    .container {
+        display: none;
+    }
+}
 
-}
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  { 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
-#dropdown1{
-    margin-left: 500px !important;
-    margin-top: -270px !important;
-}
-.port{
-    height: 600px !important;
-    width: 600px !important;
-    margin-bottom: 20px;
-    margin-left: 50px;
-}
-h1{
-    margin-left: 50px !important;
-}
+    #dropdown1 {
+        margin-left: 500px !important;
+        margin-top: -270px !important;
+    }
+    .port {
+        height: 600px !important;
+        width: 600px !important;
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+    h1 {
+        margin-left: 50px !important;
+    }
 }
 </style>
 <!DOCTYPE html>
@@ -193,7 +256,6 @@ h1{
 <!-- Dropdown Structure -->
 
 <body>
-   
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -214,17 +276,18 @@ h1{
             <a href="#!" class="dropdown-button brand-logo" data-activates="dropdown1"><img id="logo" src="images/blog.png"></a>
         </div>
         <div id="about" class="col s12 m10 l10">
-        <h1>Portfolio</h1>
+            <h1>Portfolio</h1>
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12"><img class="port materialboxed" src="images/b1.jpg"></div>
                     <div class="col l6 s12"><img class="port materialboxed" src="images/b2.jpg"></div>
-                    <center><div class="col l12 s12"><img class="port materialboxed" src="images/b4.jpg"></div></center>
+                    <center>
+                        <div class="col l12 s12"><img class="port materialboxed" src="images/b4.jpg"></div>
+                    </center>
                 </div>
                 <div class="row">
                     <div class="col l6 s12"><img class="three port materialboxed" src="images/b3.jpg"></div>
                     <div class="col l6 s12"><img class="five port materialboxed" src="images/b5.jpg"></div>
-                    
                 </div>
                 <br>
                 <br>
@@ -253,7 +316,6 @@ h1{
                 <br>
                 <br>
                 <br>
-
                 <div class="row">
                     <div class="col l12 s12"><img class="cpl port materialboxed" src="images/baby1.jpg"></div>
                 </div>
@@ -290,15 +352,17 @@ h1{
                 <br>
                 <br>
                 <br>
-               <center> <div class="row">
-                    <div class="col l12 s12"><img class="cpl port materialboxed" src="images/cpl.jpg"></div>
-                </div>
-                <div class="row">
-                    <div class="col l12 s12"><img class="cpl port materialboxed" src="images/cpl2.jpg"></div>
-                </div>
-                <div class="row">
-                    <div class="col l12 s12"><img class="cpl port materialboxed" src="images/cpl3.jpg"></div>
-                </div></center>
+                <center>
+                    <div class="row">
+                        <div class="col l12 s12"><img id="first" class="cpl port materialboxed" src="images/cpl.jpg"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col l12 s12"><img class="cpl port materialboxed" src="images/cpl2.jpg"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col l12 s12"><img class="cpl port materialboxed" src="images/cpl3.jpg"></div>
+                    </div>
+                </center>
                 <br>
                 <br>
                 <br>
@@ -327,18 +391,17 @@ h1{
                 <br>
                 <br>
                 <div class="row">
-
                     <div class="col l6 s12"><img class="port materialboxed" src="images/j2.jpg"></div>
                     <div class="col l6 s12"><img class="port materialboxed" src="images/j4.jpg"></div>
-                    
                 </div>
-                 <div class="row">
-                   <center> <div class="col l12 s12"><img class="bottom port materialboxed" src="images/j3.jpg"></div></center>
+                <div class="row">
+                    <center>
+                        <div class="col l12 s12"><img class="bottom port materialboxed" src="images/j3.jpg"></div>
+                    </center>
                 </div>
                 <div class="row">
                     <div class="col l6 s12"><img class="bot port materialboxed" src="images/j1.jpg"></div>
                 </div>
-
                 <br>
                 <br>
                 <br>
@@ -366,7 +429,7 @@ h1{
                 <br>
                 <br>
                 <br>
-                 <div class="row">
+                <div class="row">
                     <div class="col l6 s12"><img class="d port materialboxed" src="images/d1.jpg"></div>
                 </div>
                 <br>
@@ -396,24 +459,190 @@ h1{
                 <br>
                 <br>
                 <br>
-               <div class="row">
-                    <div class="col l6 s12"><img class="port materialboxed" src="images/l1.jpg"></div>
-                    <div class="col l6 s12"><img class="port materialboxed" src="images/l2.jpg"></div>
-                    <center><div class="col l12 s12"><img class="port materialboxed" src="images/l3.jpg"></div></center>
+                <div class="row">
+                    <div class="col l6 s12"><img class="ltwom three port materialboxed" src="images/l1.jpg"></div>
+                    <div class="col l6 s12"><img class="ltwon five port materialboxed" src="images/l2.jpg"></div>
+                    <center>
+                        <div class="col l12 s12"><img class="lthree port materialboxed" src="images/l3.jpg"></div>
+                    </center>
                 </div>
                 <div class="row">
-                    <div class="col l6 s12"><img class="three port materialboxed" src="images/l4.jpg"></div>
-                    <div class="col l6 s12"><img class="five port materialboxed" src="images/l5.jpg"></div>
-                    
+                    <center>
+                        <div class="col l6 s12"><img class="ltwom three port materialboxed" src="images/l4.jpg"></div>
+                    </center>
+                    <center>
+                        <div class="col l6 s12"><img class="ltwon  five port materialboxed" src="images/l5.jpg"></div>
+                    </center>
                 </div>
                 <div class="row">
-                    <div class="col l6 s12"><img class="port materialboxed" src="images/l6.jpg"></div>
-                    <div class="col l6 s12"><img class="port materialboxed" src="images/l7.jpg"></div>
-                    <center><div class="col l12 s12"><img class="port materialboxed" src="images/l8.jpg"></div></center>
+                    <div class="col l6 s12"><img class="lone port materialboxed" src="images/l6.jpg"></div>
+                    <div class="col l6 s12"><img class="lthree port materialboxed" src="images/l7.jpg"></div>
+                    <center>
+                        <div class="col l12 s12"><img class="lthree port materialboxed" src="images/l8.jpg"></div>
+                    </center>
                 </div>
                 <div class="row">
-                    <div class="col l6 s12"><img class="three port materialboxed" src="images/l9.jpg"></div>
-                    
+                    <center>
+                        <div class="col l12 s12"><img class="lthree port materialboxed" src="images/l9.jpg"></div>
+                    </center>
+                </div>
+            </div>
+            <div class="small-container">
+                <div class="row">
+                    <div class="col l6 s12"><img class="port " src="images/b1.jpg"></div>
+                    <div class="col l6 s12"><img class="port " src="images/b2.jpg"></div>
+                    <center>
+                        <div class="col l12 s12"><img class="port " src="images/b4.jpg"></div>
+                    </center>
+                </div>
+                <div class="row">
+                    <div class="col l6 s12"><img id="bae2" class="three port " src="images/b3.jpg"></div>
+                    <div class="col l6 s12"><img  id="bae1" class="five port " src="images/b5.jpg"></div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col l12 s12"><img class="cpl port " src="images/baby1.jpg"></div>
+                </div>
+                <div class="row">
+                    <div class="col l12 s12"><img class="cpl port " src="images/baby2.jpg"></div>
+                </div>
+                <div class="row">
+                    <div class="col l12 s12"><img class="cpl port " src="images/baby3.jpg"></div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <center>
+                    <div class="row">
+                        <div class="col l12 s12"><img id="first" class="cpl port " src="images/cpl.jpg"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col l12 s12"><img class="cpl port " src="images/cpl2.jpg"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col l12 s12"><img class="cpl port " src="images/cpl3.jpg"></div>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col l6 s12"><img class="port " src="images/j2.jpg"></div>
+                    <div class="col l6 s12"><img class="port " src="images/j4.jpg"></div>
+                </div>
+                <div class="row">
+                    <center>
+                        <div class="col l12 s12"><img  id="jaz" class="bottom port " src="images/j3.jpg"></div>
+                    </center>
+                </div>
+                <div class="row">
+                    <div class="col l6 s12"><img class="bot port " src="images/j1.jpg"></div>
+                </div>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col l6 s12"><img class="d port " src="images/d1.jpg"></div>
+                </div>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col l6 s12"><img id="long1" class="ltwom longer three port " src="images/l1.jpg"></div>
+                    <div class="col l6 s12"><img id="long2" class="ltwon longer five port " src="images/l2.jpg"></div>                    <center>
+                        <div class="col l12 s12"><img class="lthree port " src="images/l3.jpg"></div>
+                    </center>
+                </div>
+                <div class="row">
+                    <center>
+                        <div class="col l6 s12"><img class="ltwom three port " src="images/l4.jpg"></div>
+                    </center>
+                    <center>
+                        <div class="col l6 s12"><img id="long5" class="ltwon longer five port " src="images/l5.jpg"></div>
+                    </center>
+                </div>
+                <div class="row">
+                    <div class="col l6 s12"><img id="long6" class="lone port " src="images/l6.jpg"></div>
+                    <div class="col l6 s12"><img class="lthree port " src="images/l7.jpg"></div>
+                    <center>
+                        <div class="col l12 s12"><img class="lthree port " src="images/l8.jpg"></div>
+                    </center>
+                </div>
+                <div class="row">
+                    <center>
+                        <div class="col l12 s12"><img class="lthree port " src="images/l9.jpg"></div>
+                    </center>
                 </div>
             </div>
         </div>
@@ -426,35 +655,35 @@ h1{
 
         $(".dropdown-button").dropdown();
         $('.modal').modal();
-         $('.materialboxed').materialbox();
+        $('.materialboxed').materialbox();
 
         // Initialize Firebase
         // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyA-PG3lCfLDH9A9fULLOK63Fyw53rKZDLY",
-            authDomain: "cheynacarr-506e2.firebaseapp.com",
-            databaseURL: "https://cheynacarr-506e2.firebaseio.com",
-            projectId: "cheynacarr-506e2",
-            storageBucket: "cheynacarr-506e2.appspot.com",
-            messagingSenderId: "756010453903"
-        };
-        firebase.initializeApp(config);
-        var database = firebase.database();
+        // var config = {
+        //     apiKey: "AIzaSyA-PG3lCfLDH9A9fULLOK63Fyw53rKZDLY",
+        //     authDomain: "cheynacarr-506e2.firebaseapp.com",
+        //     databaseURL: "https://cheynacarr-506e2.firebaseio.com",
+        //     projectId: "cheynacarr-506e2",
+        //     storageBucket: "cheynacarr-506e2.appspot.com",
+        //     messagingSenderId: "756010453903"
+        // };
+        // firebase.initializeApp(config);
+        // var database = firebase.database();
 
 
 
 
-        $("#submit").on("click", function() {
-            event.preventDefault();
-            var name = $("#name").val().trim();
-            var number = $("#number").val().trim();
-            var message = $("#textarea1").val().trim();
-            database.ref().push({
-                Name: name,
-                Email: number,
-                Message: message
-            });
-        });
+        // $("#submit").on("click", function() {
+        //     event.preventDefault();
+        //     var name = $("#name").val().trim();
+        //     var number = $("#number").val().trim();
+        //     var message = $("#textarea1").val().trim();
+        //     database.ref().push({
+        //         Name: name,
+        //         Email: number,
+        //         Message: message
+        //     });
+        // });
 
 
 
